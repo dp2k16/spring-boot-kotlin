@@ -45,7 +45,7 @@ jar {
 }
 
 springBoot {
-    mainClass = '_DefaultPackage'
+    mainClass = 'ediblemuon.ApplicationKt'
 }
 
 repositories {

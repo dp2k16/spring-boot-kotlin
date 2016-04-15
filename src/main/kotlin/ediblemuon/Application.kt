@@ -27,10 +27,6 @@ interface GreetingRepository : CrudRepository<Greeting, Long> {
 
 }
 
-/**
- * Simple REST controller.
- * @param GreetingRepository repository
- */
 @RestController
 class GreetingController @Autowired constructor(val repository: GreetingRepository) {
 
