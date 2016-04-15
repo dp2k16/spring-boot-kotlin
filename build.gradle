@@ -4,8 +4,11 @@ version '1.0.0'
 buildscript {
 
     ext.kotlin_version = '1.0.1-2'
+    ext.groovy_version = '2.4.1'
     ext.sb_plugin_version = '1.3.3.RELEASE'
     ext.dokka_version = '0.9.7'
+    ext.dependency_management_plugin_version = '0.4.0.RELEASE'
+    ext.spring_test_version = '4.0.8.RELEASE'
 
     repositories {
         maven { url "https://repo.spring.io/libs-release" }
@@ -16,8 +19,8 @@ buildscript {
 
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:$sb_plugin_version")
-        classpath "io.spring.gradle:dependency-management-plugin:0.4.0.RELEASE"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$sb_plugin_version"
+        classpath "io.spring.gradle:dependency-management-plugin:$dependency_management_plugin_version"
         classpath "org.jetbrains.dokka:dokka-gradle-plugin:${dokka_version}"
     }
 }
@@ -60,9 +63,9 @@ dependencies {
 
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "org.springframework.boot:spring-boot-starter-web"
-    compile "org.codehaus.groovy:groovy-all:2.4.1"
+    compile "org.codehaus.groovy:groovy-all:$groovy_version"
     compile "org.springframework.data:spring-data-jpa"
 
     testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
-    testCompile "org.springframework:spring-test:4.0.8.RELEASE"
+    testCompile "org.springframework:spring-test:$spring_test_version"
 }
