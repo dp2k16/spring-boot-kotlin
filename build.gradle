@@ -8,7 +8,7 @@ buildscript {
     ext.sb_plugin_version = '1.3.3.RELEASE'
     ext.dokka_version = '0.9.7'
     ext.dependency_management_plugin_version = '0.4.0.RELEASE'
-    ext.spring_test_version = '4.0.8.RELEASE'
+    ext.spring_test_version = '4.2.5.RELEASE'
 
     repositories {
         maven { url "https://repo.spring.io/libs-release" }

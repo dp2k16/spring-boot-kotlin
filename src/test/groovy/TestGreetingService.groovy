@@ -1,5 +1,6 @@
-package ediblemuon
-
+import ediblemuon.Greeting
+import ediblemuon.GreetingController
+import ediblemuon.GreetingRepository
 import groovy.json.JsonSlurper
 import spock.lang.Specification
 
